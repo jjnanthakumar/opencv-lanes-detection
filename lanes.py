@@ -3,7 +3,7 @@ import numpy as np
 
 
 # import matplotlib.pylab as plt
-
+__author__ = "jjnanthakumar477@gmail.com"
 
 def region_of_interest(img, vertices):
     mask = np.zeros_like(img)
@@ -71,3 +71,5 @@ while cap.isOpened():
     cv.imshow('LaneDetection', image)
 cap.release()
 cv.destroyAllWindows()
+
+print("Created by "+__author__)
